@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form 表单</title>
+</head>
+<body>
+	<h1>Form 表单</h1>
+	<form action="/reg/" method="get" enctype="multipart/form-data">
+		<table border="1">
+		<tr>
+			<td><lable for="username">姓名</lable></td>
+			<td>
+			<input type="text" id= "username" placeholder="此处输入姓名" name="username">
+			<input type="hidden" value="abcd">
+			</td>
+			
+		</tr>
+		<tr>
+			<td><label for="pwd">密码</label></td>
+			<td><input type="password" id="pwd" name="password"></td>
+			
+		</tr>
+		<tr>
+			<td><label for="intro">简介</label></td>
+			<td>
+				<textarea name="intro" id="intro" cols="30" rows="10"></textarea>
+			</td>
+			
+		</tr>
+		<tr>
+			<td>性别</td>
+			<td>
+				<input type="radio" checked="checked" name="sex" id="male"><label for="male">男</label>
+				<input type="radio" name="sex" id="female"><label for="female">女</label>
+			</td>
+			
+		</tr>
+		<tr>
+			<td>学历</td>
+			<td>
+				<select name="edu" multiple="1" id="edu">
+					<option value="1">本科</option>
+					<option selected="selected" value="2">专科</option>
+					<option value="3">高中</option>
+				</select>
+			</td>
+			
+		</tr>
+
+		<tr>
+			<td>兴趣爱好</td>
+			<td>
+				<input type="checkbox" checked="checked" name="interest" id="interest_1"><label for="interest_1">音乐</label>
+				<input type="checkbox" name="interest" id="interest_2"><label for="interest_2">电影</label>
+				<input type="checkbox" name="interest" id="interest_3"><label for="interest_3">网络</label>
+				<input type="checkbox" name="interest" id="interest_4"><label for="interest_4">文学</label>
+			</td>
+		</tr>
+
+		<tr>
+			<td>照片</td>
+			<td>
+				<input type="file" name="photoes">
+			</td>
+		</tr>
+
+		<tr>
+			<td></td>
+			<td>
+				<input type="submit" name="提交">
+				<input type="reset" name="重置">
+				<input type="button" value="按钮">
+			</td>
+		</tr>
+
+		</table>
+
+	</form>
+
+</body>
+</html>

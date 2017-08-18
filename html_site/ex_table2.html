@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表格 table</title>
+</head>
+<body>
+	<table border="1" width="300" cellpadding="10" cellspacing="5">
+		<thead>
+			<tr>
+				<th>序号</th>
+				<th>姓名</th>
+				<th>分数</th>
+			</tr>>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Tom</td>
+				<td>90</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td colspan="2"></td>
+				<!--<td></td>-->
+			</tr>
+			<tr>
+				<td>3</td>
+				<td rowspan="2">
+					<table border="1" width="150">
+						<tr>
+							<td>1</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+
+				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<!--<td></td>-->
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
