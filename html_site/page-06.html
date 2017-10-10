@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML 表单</title>
+</head>
+<body>
+	<form action="#" method="post">
+		<table border="1" cellpadding="5">
+			<tr>
+				<td></td>
+				<td>表单示例</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="username">用户名：</label>
+				</td>
+				<td>
+					<input type="text" name="username" id="username" placeholder="用户名" value="tom" autocomplete="off">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="pwd">密码：</label>
+				</td>
+				<td>
+					<input type="password" id="pwd">
+				</td>
+			</tr>
+			<tr>
+				<td>邮箱：</td>
+				<td>
+					<input type="email" id="email">
+				</td>
+			</tr>
+			<tr>
+				<td>网址：</td>
+				<td>
+					<input type="url">
+				</td>
+			</tr>
+			<tr>
+				<td>照片：</td>
+				<td>
+					<input type="file" id="photo" name="photo">
+				</td>
+			</tr>
+			<tr>
+				<td>个人简介：</td>
+				<td>
+					<textarea name="intro" id="intro" cols="30" rows="10"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>性别：</td>
+				<td>
+					<input type="radio" name="gender" value="male" id="male" checked="checked"><label for="male">男</label>
+					<input type="radio" name="gender" value="female" id="female"><label for="female">女</label>
+				</td>
+			</tr>
+			<tr>
+				<td>兴趣爱好：</td>
+				<td>
+					<input type="checkbox" name="intresting" id="music"><label for="music">音乐</label>
+					<input type="checkbox" name="intresting" id="art"><label for="art">美术</label>
+					<input type="checkbox" name="intresting" id="sports"><label for="sports">体育</label>
+					<input type="checkbox" name="intresting" id="coding"><label for="coding">编程</label>
+					<input type="checkbox" name="intresting" id="movie"><label for="movie">电影</label>
+				</td>
+			</tr>
+			<tr>
+				<td>学历：</td>
+				<td>
+					<select name="edu" id="edu">
+						<option value="1">初中</option>
+						<option value="2">高中</option>
+						<option value="3" selected="selected">中专</option>
+						<option value="4">大专</option>
+						<option value="5">本科</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>隐藏域：</td>
+				<td>
+					<input type="hidden" value="test@gmail.com">
+				</td>
+			</tr>
+			<tr>
+				<td>操作</td>
+				<td>
+					<input type="submit" value="提交">
+					<input type="reset" value="重置">
+					<input type="button" value="普通按钮">
+					<button>HTML5的按钮</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
